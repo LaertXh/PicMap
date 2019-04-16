@@ -49,4 +49,4 @@ Find out where is the user, link their real loctions to an post database.Could b
 ### 3. Navigation
 
 ## Wireframes
-<img src="https://imgur.com/a/LR0l6QC" width=800><br>
+<img src="https://github.com/ejl-iosdev/PicMap/blob/master/iOsWireframe.jpg><br>
