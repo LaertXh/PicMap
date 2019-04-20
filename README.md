@@ -3,6 +3,7 @@
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
+1. [Schema](#Schema)
 
 ## Overview
 ### Description
@@ -50,3 +51,30 @@ Find out where is the user, link their real loctions to an post database.Could b
 
 ## Wireframes
 <img src="https://i.imgur.com/JeCu8rb.jpg">
+
+## Schema 
+### Models
+#### Post
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| image author |
+   | image/video   | File     | image/video that user posts |
+   | caption       | String   | image caption by author |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | location      | Pointer to map     | thename of the location with aproximate location on the map |
+   
+   
+### Networking
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query all posts based on the location of the user 
+   - Create Post Screen
+      - (Create/POST) Create a new post object
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+      - (Delete) Delte specific post 
+
+
