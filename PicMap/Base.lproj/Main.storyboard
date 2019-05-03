@@ -48,12 +48,13 @@
                                     <segue destination="VIS-cP-MRz" kind="show" id="ROK-5v-5w1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbF-I0-kjk">
-                                <rect key="frame" x="38" y="467" width="316" height="30"/>
-                                <color key="backgroundColor" red="0.28708797679999998" green="0.44097100249999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbF-I0-kjk">
+                                <rect key="frame" x="8" y="464" width="398" height="34"/>
+                                <color key="backgroundColor" red="0.28708797679999998" green="0.44097100249999999" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Not a Member? Sign Up">
-                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.74315900260000001" green="0.22630304330000001" blue="0.1229057123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="G3K-Ta-MHt" kind="show" id="nrf-O5-Cvl"/>
@@ -70,15 +71,15 @@
                         <constraints>
                             <constraint firstItem="suv-xt-IU9" firstAttribute="top" secondItem="1bG-cf-WnL" secondAttribute="bottom" constant="50" id="2c0-SG-EGR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PS4-5V-19K" secondAttribute="trailing" constant="8" id="5Ht-Yr-css"/>
-                            <constraint firstItem="kbF-I0-kjk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="suv-xt-IU9" secondAttribute="bottom" constant="43" id="5PT-WC-D7w"/>
+                            <constraint firstItem="kbF-I0-kjk" firstAttribute="top" secondItem="suv-xt-IU9" secondAttribute="bottom" constant="40" id="7PW-FV-anA"/>
                             <constraint firstItem="jnP-bY-qZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="AQp-s7-AUy"/>
+                            <constraint firstItem="kbF-I0-kjk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BRP-dv-8WV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1bG-cf-WnL" secondAttribute="trailing" constant="8" id="DUc-cS-WOo"/>
                             <constraint firstItem="PS4-5V-19K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="EfQ-04-Bn5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kbF-I0-kjk" secondAttribute="trailing" constant="8" id="F2C-IY-Oo8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="suv-xt-IU9" secondAttribute="trailing" constant="8" id="FPV-f5-rbx"/>
                             <constraint firstItem="Tf5-81-Jxn" firstAttribute="top" secondItem="PS4-5V-19K" secondAttribute="bottom" constant="10" id="IqC-cc-KGb"/>
                             <constraint firstItem="1bG-cf-WnL" firstAttribute="top" secondItem="jnP-bY-qZd" secondAttribute="bottom" constant="10" id="MPh-bd-RcX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kbF-I0-kjk" secondAttribute="bottom" constant="8" id="U4I-y5-ugh"/>
                             <constraint firstItem="Tf5-81-Jxn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="fGf-h6-xtg"/>
                             <constraint firstItem="1bG-cf-WnL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="h9s-eH-L5e"/>
                             <constraint firstItem="jnP-bY-qZd" firstAttribute="top" secondItem="Tf5-81-Jxn" secondAttribute="bottom" constant="25" id="iyZ-TO-EQN"/>
