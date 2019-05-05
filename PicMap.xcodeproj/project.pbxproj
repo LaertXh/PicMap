@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		00868CC7C1254916F0BCD100 /* Pods_PicMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9D719C5CFB66983AB85DDE /* Pods_PicMapUITests.framework */; };
 		087BA7C23D2CB771DDD7CC44 /* Pods_PicMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69948ED68960E058A1E8A315 /* Pods_PicMapTests.framework */; };
+		A196A5E4227F9A93000CC212 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196A5E3227F9A93000CC212 /* FeedViewController.swift */; };
+		A196A5E6227F9AE6000CC212 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196A5E5227F9AE6000CC212 /* LoginViewController.swift */; };
+		A196A5E8227F9F6B000CC212 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196A5E7227F9F6B000CC212 /* SignUpViewController.swift */; };
 		A1D82EC52264DC9E00FA50ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D82EC42264DC9E00FA50ED /* AppDelegate.swift */; };
-		A1D82EC72264DC9E00FA50ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D82EC62264DC9E00FA50ED /* ViewController.swift */; };
 		A1D82ECA2264DC9E00FA50ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D82EC82264DC9E00FA50ED /* Main.storyboard */; };
 		A1D82ECC2264DC9F00FA50ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D82ECB2264DC9F00FA50ED /* Assets.xcassets */; };
 		A1D82ECF2264DC9F00FA50ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D82ECD2264DC9F00FA50ED /* LaunchScreen.storyboard */; };
@@ -45,9 +47,11 @@
 		74C1F8BCA5CAE28F796C1955 /* Pods-PicMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicMap.release.xcconfig"; path = "Target Support Files/Pods-PicMap/Pods-PicMap.release.xcconfig"; sourceTree = "<group>"; };
 		9203CAAEB499104F8FAF84BB /* Pods-PicMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicMap.debug.xcconfig"; path = "Target Support Files/Pods-PicMap/Pods-PicMap.debug.xcconfig"; sourceTree = "<group>"; };
 		959328FA76E9F8A5CA437119 /* Pods-PicMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicMapTests.release.xcconfig"; path = "Target Support Files/Pods-PicMapTests/Pods-PicMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		A196A5E3227F9A93000CC212 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A196A5E5227F9AE6000CC212 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A196A5E7227F9F6B000CC212 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A1D82EC12264DC9E00FA50ED /* PicMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D82EC42264DC9E00FA50ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1D82EC62264DC9E00FA50ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1D82EC92264DC9E00FA50ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1D82ECB2264DC9F00FA50ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1D82ECE2264DC9F00FA50ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,11 +119,13 @@
 			isa = PBXGroup;
 			children = (
 				A1D82EC42264DC9E00FA50ED /* AppDelegate.swift */,
-				A1D82EC62264DC9E00FA50ED /* ViewController.swift */,
 				A1D82EC82264DC9E00FA50ED /* Main.storyboard */,
 				A1D82ECB2264DC9F00FA50ED /* Assets.xcassets */,
 				A1D82ECD2264DC9F00FA50ED /* LaunchScreen.storyboard */,
 				A1D82ED02264DC9F00FA50ED /* Info.plist */,
+				A196A5E3227F9A93000CC212 /* FeedViewController.swift */,
+				A196A5E5227F9AE6000CC212 /* LoginViewController.swift */,
+				A196A5E7227F9F6B000CC212 /* SignUpViewController.swift */,
 			);
 			path = PicMap;
 			sourceTree = "<group>";
@@ -162,7 +168,6 @@
 				6BAA25C170EA409FB410C94B /* Pods-PicMapUITests.debug.xcconfig */,
 				1DF5EF50B8DC67263D2A00DC /* Pods-PicMapUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -394,8 +399,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1D82EC72264DC9E00FA50ED /* ViewController.swift in Sources */,
+				A196A5E6227F9AE6000CC212 /* LoginViewController.swift in Sources */,
 				A1D82EC52264DC9E00FA50ED /* AppDelegate.swift in Sources */,
+				A196A5E8227F9F6B000CC212 /* SignUpViewController.swift in Sources */,
+				A196A5E4227F9A93000CC212 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

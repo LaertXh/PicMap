@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PicMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="PicMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,6 +45,7 @@
                                     <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kAv-N7-1sc"/>
                                     <segue destination="VIS-cP-MRz" kind="show" id="ROK-5v-5w1"/>
                                 </connections>
                             </button>
@@ -91,6 +92,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="1bG-cf-WnL" id="vAw-u3-QKi"/>
+                        <outlet property="usernameField" destination="Tf5-81-Jxn" id="GoJ-jA-o9r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="3402.898550724638" y="144.64285714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="Tjb-AV-rpa">
             <objects>
-                <viewController id="G3K-Ta-MHt" sceneMemberID="viewController">
+                <viewController id="G3K-Ta-MHt" customClass="SignUpViewController" customModule="PicMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QRu-nM-0Ox">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,6 +185,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignUp:" destination="G3K-Ta-MHt" eventType="touchUpInside" id="5o4-ni-7AE"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDI-fC-t9I">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -246,6 +254,11 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="confirmPasswordField" destination="Ar6-aP-Jd8" id="C42-E3-o25"/>
+                        <outlet property="newPasswordField" destination="wWu-xP-GNr" id="8yo-bS-LRl"/>
+                        <outlet property="newUsernameField" destination="2bZ-36-cUs" id="scf-Dy-C5g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5P-tL-vqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
