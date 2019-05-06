@@ -54,6 +54,8 @@ Find out where is the user, link their real loctions to an post database.Could b
 
 ## Schema 
 ### Models
+
+<img src="https://github.com/ejl-iosdev/PicMap/blob/master/PicMapTabBarAndMaps.gif" width=200>
 #### Post
 
    | Property      | Type     | Description |
