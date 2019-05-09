@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="PicMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="PicMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kAv-N7-1sc"/>
-                                    <segue destination="VIS-cP-MRz" kind="show" id="ROK-5v-5w1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbF-I0-kjk">
@@ -95,6 +94,7 @@
                     <connections>
                         <outlet property="passwordField" destination="1bG-cf-WnL" id="vAw-u3-QKi"/>
                         <outlet property="usernameField" destination="Tf5-81-Jxn" id="GoJ-jA-o9r"/>
+                        <segue destination="VIS-cP-MRz" kind="presentation" identifier="loginSegue" id="WYM-MQ-0Sl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -258,6 +258,7 @@
                         <outlet property="confirmPasswordField" destination="Ar6-aP-Jd8" id="C42-E3-o25"/>
                         <outlet property="newPasswordField" destination="wWu-xP-GNr" id="8yo-bS-LRl"/>
                         <outlet property="newUsernameField" destination="2bZ-36-cUs" id="scf-Dy-C5g"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="sigupSegue" id="J0s-Xt-gbG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5P-tL-vqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,7 +268,7 @@
         <!--User Profile-->
         <scene sceneID="udK-Rg-07e">
             <objects>
-                <viewController id="eKM-18-45J" sceneMemberID="viewController">
+                <viewController id="eKM-18-45J" customClass="ProfileViewController" customModule="PicMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nr7-x7-vsI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -329,7 +330,11 @@
                         <viewLayoutGuide key="safeArea" id="kQr-Zg-Cdt"/>
                     </view>
                     <navigationItem key="navigationItem" title="User Profile" id="RNl-Fv-ahZ">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="bWY-lL-65V"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="bWY-lL-65V">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="eKM-18-45J" id="xde-JQ-NXo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B5V-Mv-tsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -339,7 +344,7 @@
         <!--Navigation Controller-->
         <scene sceneID="h95-5f-E4d">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VIS-cP-MRz" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProfileNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="VIS-cP-MRz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Jh-Fp-fd8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -355,4 +360,7 @@
             <point key="canvasLocation" x="1197" y="131"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="J0s-Xt-gbG"/>
+    </inferredMetricsTieBreakers>
 </document>
