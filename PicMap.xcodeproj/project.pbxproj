@@ -20,6 +20,7 @@
 		A1D82EE52264DC9F00FA50ED /* PicMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D82EE42264DC9F00FA50ED /* PicMapUITests.swift */; };
 		AEFB985481DB24B534F84BF7 /* Pods_PicMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F308BA128D97EAF410631DE0 /* Pods_PicMap.framework */; };
 		B577D8FD2284BF8700DF3404 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577D8FC2284BF8700DF3404 /* ProfileViewController.swift */; };
+		B577D9012289C06800DF3404 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577D9002289C06800DF3404 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		A1D82EE42264DC9F00FA50ED /* PicMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicMapUITests.swift; sourceTree = "<group>"; };
 		A1D82EE62264DC9F00FA50ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B577D8FC2284BF8700DF3404 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B577D9002289C06800DF3404 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		F308BA128D97EAF410631DE0 /* Pods_PicMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 				A196A5E5227F9AE6000CC212 /* LoginViewController.swift */,
 				A196A5E7227F9F6B000CC212 /* SignUpViewController.swift */,
 				B577D8FC2284BF8700DF3404 /* ProfileViewController.swift */,
+				B577D9002289C06800DF3404 /* EditViewController.swift */,
 			);
 			path = PicMap;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			files = (
 				A196A5E6227F9AE6000CC212 /* LoginViewController.swift in Sources */,
 				A1D82EC52264DC9E00FA50ED /* AppDelegate.swift in Sources */,
+				B577D9012289C06800DF3404 /* EditViewController.swift in Sources */,
 				B577D8FD2284BF8700DF3404 /* ProfileViewController.swift in Sources */,
 				A196A5E8227F9F6B000CC212 /* SignUpViewController.swift in Sources */,
 				A196A5E4227F9A93000CC212 /* FeedViewController.swift in Sources */,

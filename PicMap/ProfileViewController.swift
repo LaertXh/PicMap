@@ -8,11 +8,27 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 class ProfileViewController: UIViewController{
-
+    @IBOutlet weak var ProfileImage: UIImageView!
+    @IBOutlet weak var NickName: UILabel!
+    @IBOutlet weak var UserStory: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let user = PFUser.current()!
+        if user["NickName"] != nil{
+            NickName.text = user["NickName"] as? String
+        }
+        if user["UserStory"] != nil{
+            UserStory.text = user["UserStory"] as? String
+        }
+        if user["ProfileImage"] != nil{
+            let imageFile = user["ProfileImage"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            ProfileImage.af_setImage(withURL: url)
+        }
+     
         // Do any additional setup after loading the view.
     }
     
