@@ -342,7 +342,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User's story" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bF-Ij-j8Q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User's story" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bF-Ij-j8Q">
                                 <rect key="frame" x="209" y="183" width="195" height="176"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -380,6 +380,7 @@
                             <constraint firstItem="rfV-NR-8dr" firstAttribute="centerX" secondItem="pLX-9s-sKM" secondAttribute="centerX" id="RtR-If-U14"/>
                             <constraint firstItem="ElG-A2-Yvx" firstAttribute="leading" secondItem="pLX-9s-sKM" secondAttribute="trailing" constant="78" id="VCB-pK-dOP"/>
                             <constraint firstItem="rfV-NR-8dr" firstAttribute="top" secondItem="kQr-Zg-Cdt" secondAttribute="top" constant="48" id="WdA-Ru-vGW"/>
+                            <constraint firstItem="2bF-Ij-j8Q" firstAttribute="leading" secondItem="rfV-NR-8dr" secondAttribute="trailing" constant="10" id="Yal-ux-wY2"/>
                             <constraint firstItem="rfV-NR-8dr" firstAttribute="leading" secondItem="kQr-Zg-Cdt" secondAttribute="leading" constant="20" id="bHO-E9-Ojb"/>
                             <constraint firstItem="QHQ-UH-Ohs" firstAttribute="leading" secondItem="2bF-Ij-j8Q" secondAttribute="leading" id="bVG-7C-DeU"/>
                             <constraint firstItem="KWa-r6-LPq" firstAttribute="trailing" secondItem="kQr-Zg-Cdt" secondAttribute="trailing" id="ek8-f1-weV"/>
@@ -391,6 +392,7 @@
                             <constraint firstItem="baE-3r-TKk" firstAttribute="trailing" secondItem="KWa-r6-LPq" secondAttribute="trailing" id="oXm-AB-ERj"/>
                             <constraint firstItem="pLX-9s-sKM" firstAttribute="top" secondItem="rfV-NR-8dr" secondAttribute="bottom" constant="8" symbolic="YES" id="pS9-UI-97l"/>
                             <constraint firstItem="baE-3r-TKk" firstAttribute="leading" secondItem="KWa-r6-LPq" secondAttribute="leading" id="qhV-p0-UuJ"/>
+                            <constraint firstItem="kQr-Zg-Cdt" firstAttribute="trailing" secondItem="2bF-Ij-j8Q" secondAttribute="trailing" constant="10" id="vVd-kT-kZp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kQr-Zg-Cdt"/>
                     </view>
